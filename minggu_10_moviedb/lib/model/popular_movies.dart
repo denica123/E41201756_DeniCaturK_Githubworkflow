@@ -43,7 +43,7 @@ class Results {
   late bool adult;
   late String backdropPath;
   late String originalLanguange;
-  late String originalTitle;
+  late String originalMovie;
   late List<int> genreIds;
   late String title;
   late double voteAverage;
@@ -59,7 +59,7 @@ class Results {
       required this.adult,
       required this.backdropPath,
       required this.originalLanguange,
-      required this.originalTitle,
+      required this.originalMovie,
       required this.genreIds,
       required this.title,
       required this.voteAverage,
@@ -75,7 +75,7 @@ class Results {
     adult = json['adult'];
     backdropPath = json['backdrop_path'];
     originalLanguange = json['original_languange'];
-    originalTitle = json['original_title'];
+    originalMovie = json['original_title'];
     genreIds = json['genre_ids'].cast<int>();
     title = json['title'];
     voteAverage = json['vote_average'].toDouble();
@@ -93,7 +93,7 @@ class Results {
     data['adult'] = this.adult;
     data['backdrop_path'] = this.backdropPath;
     data['original_languange'] = this.originalLanguange;
-    data['original_title'] = this.originalTitle;
+    data['original_title'] = this.originalMovie;
     data['genre_ids'] = this.genreIds;
     data['title'] = this.title;
     data['vote_average'] = this.voteAverage;
