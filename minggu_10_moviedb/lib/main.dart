@@ -12,7 +12,7 @@ class MoviesApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Movies App',
+      title: 'Movies DB',
       theme: ThemeData(
         primarySwatch: Colors.blueGrey,
       ),
@@ -44,7 +44,7 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Movies App'),
+        title: Text('Movies DB'),
       ),
       body: FutureBuilder(
         future: popularMovies,
