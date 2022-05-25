@@ -96,7 +96,7 @@ class _HomeState extends State<Home> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
                 Container(
-                  width: 120,
+                  width: 100,
                   child: Image.network(poster,
                   ),
                 ),
@@ -113,10 +113,10 @@ class _HomeState extends State<Home> {
                       Text(
                         title,
                         style: TextStyle(
-                            fontSize: 18, fontWeight: FontWeight.w600),
+                            fontSize: 16, fontWeight: FontWeight.w400),
                       ),
                       SizedBox(
-                        height: 10,
+                        height: 12,
                       ),
                       Row(
                         children: <Widget>[
